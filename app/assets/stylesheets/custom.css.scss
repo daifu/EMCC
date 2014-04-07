@@ -1,0 +1,68 @@
+$screen-lg-min: 760px;
+$screen-md-min: 500px;
+$screen-sm-min: 500px;
+$screen-xs-min: 500px;
+$container-lg: 790px;
+$grid-gutter-width:20px;
+$container-md: 780px;
+$dropdown-link-active-bg: #6c705a;
+$dropdown-link-color: #6c705a;
+$brand-primary: #6c705a;
+
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $gray-light;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
