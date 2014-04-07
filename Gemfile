@@ -13,7 +13,6 @@ gem 'pg'
 gem 'simple_form'
 gem 'unicorn'
 gem 'unicorn-rails'
-gem 'sqlite3'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :mri_21, :rbx]
@@ -29,6 +28,7 @@ group :development do
   gem 'rb-inotify', :require=>false
 end
 group :development, :test do
+  gem 'sqlite3'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
 end
